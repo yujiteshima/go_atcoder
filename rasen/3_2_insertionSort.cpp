@@ -3,7 +3,12 @@
 using namespace std;
 // 1<=N<=100
 // 0<=A<=1000
-
+/**
+ * 挿入ソート
+ * O(n^2): データが降順のケース
+ * O(n): データが昇順のケース
+ * ある程度整列されたデータに対しては高速に動作する特徴をもつ
+ */
 void trace(vector<int> a) {
   for (int i = 0; i < a.size(); ++i) {
     if (i == a.size() - 1)
